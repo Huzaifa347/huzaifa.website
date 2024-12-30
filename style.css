@@ -1,0 +1,749 @@
+@font-face {
+    font-family: 'boldFont';
+    src: url(Fonts/PublicSans-Bold.woff2);
+}
+
+@font-face {
+    font-family: 'normalFont';
+    src: url(Fonts/PublicSans-Regular.woff2);
+}
+@font-face {
+    font-family: 'paraFont';
+    src: url(Fonts/pxiEyp8kv8JHgFVrJJfecg.woff2);
+}
+
+
+
+:root{
+    --para-font : 'paraFont';
+    --normal-font : 'normalFont';
+    --bold-font : 'boldFont';
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body , html{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.main{
+    min-height: 100vh;
+}
+#page1{
+    color: white;
+    min-height: 100vh;
+    background: url('Images/MainBackground.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.content_div{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background: radial-gradient(#38383845, #000000);
+    height: 100%;
+}
+.navbar{
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+.explore_search{
+    width: 32%;
+    /* background-color: yellow; */
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: start;
+}
+.explore_search h3{
+    font-family: var(--bold-font);
+}
+.explore_search input{
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.562);
+    padding: 9px 15px;
+    background-color: transparent;
+    color: white;
+    font-family: var(--normal-font);
+}
+.nasa_logo{
+    width: 32%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar_link{
+    /* background-color: red; */
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+.navbar_link a{
+    font-family: var(--bold-font);
+    font-size: 20px;
+}
+.navbar_link .nasa_live{
+    display: flex;
+}
+.navbar_link .live{
+    border: 1px solid rgb(200, 32, 32);
+    padding: 0px 10px;
+    font-weight: 100;
+    font-family: var(--normal-font);
+}
+.page_one_content{
+    height: calc(100vh - 100px);
+    /* background-color: red; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 10px 30px;
+}
+.home_main_content {
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content:center ;
+    gap: 70px;
+}
+.head_para_btn{
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.head_para_btn h1{
+    font-family: var(--bold-font);
+    font-size: 70px;
+    font-weight: bold;
+}
+.head_para_btn p{
+    font-family: var(--para-font);
+}
+.head_para_btn .home_btn{
+    padding: 10px 20px;
+    background-color: #D83933;
+    width: fit-content;
+    font-family: var(--bold-font);
+    font-size: 26px;
+    border-radius: 5px;
+}
+.home_footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* margin-top: 130px */
+}
+.home_footer hr{
+    opacity: .6;
+    height: 1px;
+}
+.line_content_btn{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    padding-bottom: 30px;
+}
+.line_content_btn p{
+    font-family: var(--normal-font);
+    font-weight: 200;
+}
+.line_content_btn a{
+    font-family: var(--bold-font);
+    font-size: 20px;
+}
+.two_btn{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+.video_btn , .play_btn{
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    background-color: white;
+}
+.two_btn .video_btn{
+    background: url('https://www.nasa.gov/wp-content/uploads/2024/11/54141962354-ee6c0cea80-o.jpg?resize=200,200');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.two_btn .play_btn{
+    background: url('https://www.nasa.gov/wp-content/uploads/2024/11/54141962354-ee6c0cea80-o.jpg?resize=2000,1333');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#page2{
+    min-height: fit-content;
+    width: 100vw;
+    background-color: white;
+    padding: 100px 80px 20px 80px;
+}
+.page_two_top_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.page_two_top_div h1{
+    font-family: var(--bold-font);
+    font-size: 50px;
+    font-weight: bold;
+}
+.page_two_top_div a{
+    font-family: var(--bold-font);
+    font-size: 24px;
+    color: black;
+}
+.card_div{
+    /* flex-wrap: wrap; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin-top: 50px;
+}
+.card_div .first_card{
+    /* width: 40%; */
+    width: 49%;
+    height: 410px;
+    position: relative;
+    background-image: url('https://www.nasa.gov/wp-content/uploads/2024/11/e1-pia26471-curiosity-3000pixels.jpg?resize=1200,302');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.second_card_div_media{
+    display: flex;
+    gap: 10px;
+    width: 48%;
+}
+.background_div{
+    padding: 10px 30px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    background:radial-gradient(#38383845, #000000);
+}
+.background_div a{
+    letter-spacing: 4px;
+    font-family: var(--normal-font);
+    font-weight: 200;
+    font-size: 14px;
+}
+.background_div p{
+    letter-spacing: 4px;
+    font-family: var(--normal-font);
+    font-weight: 200;
+    font-size: 14px;
+    opacity: .7;
+    margin-bottom: 4px;
+}
+.background_div h1{
+    font-family: var(--bold-font);
+    font-size: 24px
+}
+.card_div .second_card_div_media .second_card{
+    /* width: 40%; */
+    width: 50%;
+    height: 410px;
+    position: relative;
+    background-image: url('https://www.nasa.gov/wp-content/uploads/2024/11/c-turner.png?resize=960,1200');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.third_card_div{
+    height: 410px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+.third_card_div .third_card{
+    position: relative;
+    height: 200px;
+    width: 350px;
+    background-image: url('https://www.nasa.gov/wp-content/uploads/2024/04/nasa_meatball_4.png?resize=1200,675');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.third_card_div .forth_card{
+    position: relative;
+    height: 200px;
+    width: 350px;
+    background-image: url('https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/galaxies/interacting/Hubble_%20MCG+05-31-045_potw2446a.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mini_card_div{
+    display: flex;
+    /* gap: 10px; */
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    /* padding: 0px 80px; */
+}
+.mini_one{
+    width: 46%;
+}
+.mini_two{
+    width: 46%;
+}
+.mini_card{
+    height: 150px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.mini_card .image_div{
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    background-color: wheat;
+    background: url('https://www.nasa.gov/wp-content/uploads/2024/11/kjell-lindgren-mission-all-systems-go-patient-photo.jpg?resize=200,200');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mini_card .mini_card_content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* background-color: green; */
+    width: 230px;
+}
+.video{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video .video_content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background:radial-gradient(#19191945, #0f111d);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 2vw;
+    color: white;
+    padding: 0px 10vw;
+}
+.video .video_content h1{
+    font-family: var(--bold-font);
+    width: 50%;
+    font-size: 6vw;
+    line-height: 5.9vw;
+}
+.video .video_content p{
+    font-family: var(--normal-font);
+    font-weight: 300;
+    width: 50%;
+    font-size: 1.5vw;
+}
+.video .video_content a{
+    font-family: var(--bold-font);
+    font-weight: 300;
+    width: 50%;
+    font-size: 1.5vw;
+}
+#page4{
+    min-height: 100vh;
+    padding: 50px 70px;
+}
+.page_four_container{
+    /* background-color: red; */
+    width: 100%;
+    height: fit-content;
+    padding: 0px 20px;
+}
+.page_four_container .page_four_heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page_four_container .page_four_heading h1{
+    font-size: 40px;
+    font-family: var(--bold-font);
+    font-weight: 500;
+}
+.page_four_container .page_four_heading a{
+    font-size: 30px;
+    font-family: var(--bold-font);
+    font-weight: 500;
+}
+.page_four_cards_container{
+    height: fit-content;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    gap: 30px;
+    /* background-color: white; */
+}
+.page_four_card_div_one{
+    width: 50%;
+    height: 30vw;
+    display: flex;
+    gap: 20px;
+}
+.page_four_card_div_one .page_four_card1{
+    background: var(--background);
+    /* background-color: red; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.page_four_card_div_one .page_four_card1 .page_four_card_background
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background:radial-gradient(#19191945, #0f111d);
+}
+.page_four_card_div_one .page_four_card1 .page_four_card_background h1
+{
+    font-family: var(--bold-font);
+    font-weight: 700;
+    color: white;
+    font-size: 26px;
+    position: absolute;
+    bottom: 70px;
+    left: 20px;
+}
+#page5{
+    min-height: 100vh;
+    /* background-color: red; */
+    width: 100%;
+    background: url('https://www.nasa.gov/wp-content/uploads/2024/11/popocatepetl-oli-20241025-lrg.jpg?resize=2000,1944');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.page_five_dark_background{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.479) 34%, rgba(0,0,0,0.45710784313725494) 100%, rgba(241,241,241,1) 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    align-items: start;
+    justify-content: center;
+    color: white;
+    padding-left: 8vw;
+}
+.page_five_dark_background h1{
+    width: 50%;
+    font-size: 90PX;
+    font-family: var(--bold-font);
+    font-weight: bolder;
+    line-height: 89PX;
+}
+.page_five_dark_background p{
+    width: 50%;
+    font-size: 20;
+    font-family: var(--bold-font);
+}
+.page_five_dark_background a{
+    font-size: 30px;
+    font-family: var(--bold-font);
+    font-weight: bold;
+}
+.navbar .search{
+    display: none;
+}
+.navbar .menu{
+    display: none;
+}
+@media only screen AND (max-width:1200px){
+    .home_main_content .two_btn{
+        display: none;
+    }
+    #page2 .card_div{
+        flex-wrap: wrap;
+    }
+    #page2 .card_div .first_card{
+        width: 100%;
+        
+    }
+    
+    #page2 .card_div .second_card_div_media{
+        width: 100%;
+        justify-content: space-between;
+    }
+    #page2 .card_div .second_card_div_media .second_card{
+        width: 49%;
+    }
+    #page2 .card_div .second_card_div_media .third_card_div{
+        width: 49%;
+    }
+    #page2 .card_div .second_card_div_media .third_card_div .third_card{
+        width: 100%;
+    }
+    #page2 .card_div .second_card_div_media .third_card_div .forth_card{
+        width: 100%;
+    }
+    #page2 .mini_card_div {
+        flex-direction: column;
+        width: 100%;
+        /* padding: 0px 80px; */
+    }
+    #page2 .mini_card_div .mini_one{
+        flex-direction: column;
+        width: 100%;
+        /* padding: 0px 80px; */
+    }
+    #page2 .mini_card_div .mini_two{
+        width: 100%;
+        /* padding: 0px 80px; */
+    }
+    #page3{
+        margin-top: 0px;
+    }
+    #page3 .video_background{
+        width: 100%;
+
+    }
+    #page3 .video_background .video_div_content{
+        width: 100%;
+        background-color: #D83933;
+    }
+}
+@media only screen AND (max-width:1024px){
+    .navbar .search{
+        display: block;
+    }
+    .page_one_content .home_main_content .head_para_btn h1{
+        font-size: 60px;
+    }
+    .page_one_content .home_main_content .head_para_btn p{
+        font-size: 18px;
+    }
+    .navbar .menu{
+        display: block;
+    }
+    .navbar .navbar_link{
+        display: none;
+    }
+    .navbar .explore_search{
+        display: none;
+    }
+    #page2 .page_two_top_div{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 20px;
+    }
+    #page4{
+        padding: 2vw 3vw;
+    }
+    #page4 .page_four_container .page_four_heading{
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 1vw;
+    }
+    #page4 .page_four_container .page_four_heading h1{
+        font-size: 5vw;
+    }
+    #page4 .page_four_container .page_four_heading a{
+        font-size: 3.5vw;
+    }
+    #page4 .page_four_cards_container{
+        flex-direction: column;
+    }
+    .page_four_card_div_one{
+        width: 100%;
+        height: 60vw;
+    }
+}
+@media only screen AND (max-width:900px){
+    .navbar_link{
+        width: 350px;
+    }
+    .navbar_link a{
+        gap: 4px;
+        font-size: 16px;
+    }
+    .navbar_link .nasa_live{
+        display: flex;
+    }
+}
+@media only screen AND (max-width:740px){
+    .page_one_content{
+        margin-top: 0px;
+    }
+    .home_main_content{
+        gap: 8vw;
+        margin-top: 0vw;
+    }
+    .home_main_content .head_para_btn{
+        padding-top: 0px;
+    }
+    .page_one_content .home_main_content .head_para_btn{
+        width: 100%;
+        gap: 4.5vw;
+    }
+    .page_one_content .home_main_content .head_para_btn h1{
+        font-size: 6vw;
+    }
+    .page_one_content .home_main_content .head_para_btn p{
+        
+        font-size: 2.5vw;
+        font-weight: 400;
+    }
+    .head_para_btn .home_btn{
+        font-size: 3vw;
+        font-weight: 400;
+    }
+    #page2{
+        padding: 2vw 6vw;
+    }
+    #page2 .page_two_top_div {
+        gap: 0px;
+    }
+    .page_two_top_div h1 {
+        font-size: 7vw;
+    }
+    #page2 .page_two_top_div a {
+        font-size: 4vw;
+    }
+    #page2 .card_div .second_card_div_media .second_card {
+        width: 100%;
+    }
+    #page2 .card_div .second_card_div_media .third_card_div {
+        width: 100%;
+    }
+    .page_four_cards_container{
+        height: fit-content;
+    }
+    .video .video_content h1{
+        width: 100%;
+    }
+    .video .video_content p{
+        width: 100%;
+    }
+    .page_four_card_div_one{
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+    }
+    .page_four_card_div_one .page_four_card1{
+        width: 100%;
+    }
+    .page_five_dark_background{
+        padding-right: 4vw;
+    }
+    .page_five_contaiber .page_five_dark_background h1{
+        width: 100%;
+        font-size: 8vw;
+        line-height: 8vw;
+    }
+    .page_five_contaiber .page_five_dark_background p{
+        width: 100%;
+        font-size: 2.5vw;
+        line-height: 4vw;
+    }
+    .page_five_contaiber .page_five_dark_background a{
+        width: 100%;
+        font-size: 4vw;
+        line-height: 4vw;
+    }
+}
+@media only screen AND (max-width:640px){
+    #page1 .content_div{
+        /* height: fit-content; */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .page_one_content .home_footer{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+    }
+    .page_one_content .home_footer .line_content_btn{
+        width: 100%;
+        gap: 2px;
+    }
+    .page_one_content{
+        margin-top: 1vw;
+    }
+    .second_card_div_media{
+        width: 100%;
+        flex-direction: column;
+    }
+    .second_card_div_media .second_card{
+        width: 100%;
+    }
+    .second_card_div_media .third_card_div{
+        width: 100%;
+    }
+    .second_card_div_media .third_card_div .third_card{
+        width: 100%;
+    }
+    .second_card_div_media .third_card_div .forth_card{
+        width: 100%;
+    }
+    
+}
